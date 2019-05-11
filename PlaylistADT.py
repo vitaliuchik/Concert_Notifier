@@ -1,7 +1,6 @@
 import ctypes
 from collections import Counter
 
-
 class DynamicArray:
     """A dynamic array class akin to a simplified Python list."""
 
