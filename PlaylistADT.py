@@ -91,28 +91,3 @@ class Playlist:
         counter = list(Counter(artists).items())
         counter.sort(key=lambda x: x[1], reverse=True)
         return [counter[i][0] for i in range(min(n, len(counter)))]
-
-        
-
-
-# simlpified examples of both types of track dictionaries
-# (in Google Play Music API there are more keys in dictionaries,
-# but here it will teke a lot of place)
-
-# song with two artists
-song1 = {'track':{'artistId': ['artist1', 'artist2']}, 'trackId': 'track1'}
-# song with one artist, who is also in first song
-song2 = {'artistId': ['artist1'], 'storeId': 'track2'}
-# the same song as first to check 
-# if Playlist will not append the same song repeatedly.
-song3 = {'track':{'artistId': ['artist1', 'artist2']}, 'trackId': 'track1'}
-
-if __name__ == '__main__':
-    playlist = Playlist()
-    playlist.append(song1)
-    playlist.append(song2)
-    playlist.append(song3)
-    print(playlist)
-    print('Top 1:', ', '.join(playlist.top_n(1)))
-
-
