@@ -5,7 +5,7 @@ import parsing
 if __name__ == '__main__':
     api = Mobileclient()
 
-    api.oauth_login('3284f2013409fe11')
+    api.oauth_login('your Device ID')
 
     main_playlist = Playlist()
 
