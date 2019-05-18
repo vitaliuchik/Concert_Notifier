@@ -5,6 +5,8 @@
 
 Інструкція
 ----------
+Клонувати репозитарій Concert_Notifier
+
 Установити пакети з requirements.txt
 
     $ pip install -r requirements.txt
