@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" media="screen" type="text/css" />
+    <style>
+        html {
+	background: url(https://static1.squarespace.com/static/5b4f4c975417fc8352ad211d/t/5b6a06b91ae6cf4028790f7d/1533675196732/o-ROCK-CONCERT-facebook.jpg?format=2500w) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-form">
+        <h1>Концерти на території України</h1>
+        <div id="ptag">
+        {% for artist in concerts %}
+            <p><a href="{{ artist[1] }}" class="myButton" style="color: black">{{ artist[0] }}</a></p>
+        {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

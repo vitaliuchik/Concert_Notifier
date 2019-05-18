@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Concert Reminder</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" media="screen" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <style>
+        html {
+	background: url(https://assets.visitphilly.com/wp-content/uploads/2018/06/festival-pier-penns-landing-new-crtsy-festival-pier-2200x1237px.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="login-form">
+      <h1>Дані користувача</h1>
+        <fieldset>
+            <form action="" method="POST">
+                <input type="text" name="deviceID" autocomplete="off" required value="Device ID" onBlur="if(this.value=='')this.value='Device ID'" onFocus="if(this.value=='Device ID')this.value='' ">
+                <input type="text" name="artNum" autocomplete="off" required value="Number of favourite artists" onBlur="if(this.value=='')this.value='Number of favourite artists'" onFocus="if(this.value=='Number of favourite artists')this.value='' ">
+                <input type="submit" value="ПІДТВЕРДИТИ">
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
