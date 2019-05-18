@@ -6,6 +6,9 @@
 Інструкція
 ----------
 * Установити пакети з requirements.txt
+'''python
+pip install -r requirements.txt
+'''
 * Запустити файл login.py з консолі
 * Після запуску програмою браузера, авторизуватися в обліковому записі Google Play Music
 * Скопіювати ключ доступу з браузера, який появиться після авторизації
@@ -39,3 +42,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+  
