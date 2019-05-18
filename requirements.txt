@@ -1,3 +1,0 @@
-fake-useragent
-gmusicapi
-beautifulsoup4
